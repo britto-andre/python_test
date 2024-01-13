@@ -1,0 +1,7 @@
+pessoa:
+  nome: 'André'
+  sobrenome: 'Teste'
+  lista: 
+    - Teste1
+    - Teste2
+    - Teste3

@@ -1,19 +1,8 @@
-import yaml
+import os
+from dotenv import load_dotenv
 
-def read_file():
-    print('Teste read file')
+load_dotenv()
 
-    with open("./settings.yaml", 'r') as file:
-        print(file.read())
-        print(yaml.load(file))
-        for data in yaml.load_all(file):
-            print(data)
-        # try:
-        #     print(yaml.load(file))
-        # except yaml.YAMLError as exc:
-        #     print('Arquivo inexistente')
-        #     print(exc)
-
-
-
-read_file()
+print(os.getenv('USERNAME'))
+print(os.getenv('variavel'))
+print(os.getenv('ROOT_URL'))
